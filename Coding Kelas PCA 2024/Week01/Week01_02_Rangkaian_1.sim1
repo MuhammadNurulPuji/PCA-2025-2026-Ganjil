@@ -1,0 +1,39 @@
+<circuit version="1.0.0-SR0" rev="1320" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-1" mainComp="false" Show_id="true" Show_Val="false" Pos="620,440" rotation="180" hflip="1" vflip="1" label="Uno-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps itemtype="MCU" CircId="1_mega328-109" mainComp="true" Show_id="false" Show_Val="false" Pos="20,20" rotation="0" hflip="1" vflip="1" label="1_mega328-109" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../../04_Koding Kelas/Coding Kelas PCA 2024/Week01/Blink_contoh/build/arduino.avr.uno/Blink_contoh.ino.with_bootloader.hex" Auto_Load="false" Rst_enabled="true" Ext_Osc="true" Wdt_enabled="false" />
+</item>
+
+<item itemtype="Led" CircId="Led-2" mainComp="false" Show_id="false" Show_Val="false" Pos="900,536" rotation="0" hflip="1" vflip="1" label="Led-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+
+<item itemtype="Resistor" CircId="Resistor-3" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="840,536" rotation="0" hflip="1" vflip="1" label="Resistor-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="220 Ω" />
+
+<item itemtype="Ground" CircId="Ground-6" mainComp="false" Show_id="false" Show_Val="false" Pos="964,576" rotation="0" hflip="1" vflip="1" label="Ground-6" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Switch" CircId="Switch-9" mainComp="false" Show_id="false" Show_Val="false" Pos="892,632" rotation="0" hflip="1" vflip="1" label="Switch-9" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" />
+
+<item itemtype="Resistor" CircId="Resistor-10" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="836,668" rotation="90" hflip="1" vflip="1" label="Resistor-10" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="10 kΩ" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-11" mainComp="false" Show_id="false" Show_Val="false" Pos="956,632" rotation="-180" hflip="1" vflip="1" label="Fixed Voltage-11" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Ground" CircId="Ground-17" mainComp="false" Show_id="false" Show_Val="false" Pos="836,732" rotation="0" hflip="1" vflip="1" label="Ground-17" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-13" mainComp="false" Pos="836,632" />
+
+<item itemtype="Connector" uid="Connector-4" startpinid="Uno-1-13" endpinid="Resistor-3-lPin" pointList="772,536,824,536" />
+
+<item itemtype="Connector" uid="Connector-5" startpinid="Led-2-lPin" endpinid="Resistor-3-rPin" pointList="884,536,856,536" />
+
+<item itemtype="Connector" uid="Connector-7" startpinid="Ground-6-Gnd" endpinid="Led-2-rPin" pointList="964,560,964,536,916,536" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="Uno-1-2" endpinid="Node-13-0" pointList="772,632,836,632" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Node-13-2" endpinid="Resistor-10-lPin" pointList="836,632,836,652" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="Node-13-1" endpinid="Switch-9-pinP0" pointList="836,632,876,632" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Switch-9-switch0pinN" endpinid="Fixed Voltage-11-outnod" pointList="908,632,940,632" />
+
+<item itemtype="Connector" uid="Connector-18" startpinid="Ground-17-Gnd" endpinid="Resistor-10-rPin" pointList="836,716,836,684" />
+
+</circuit>
