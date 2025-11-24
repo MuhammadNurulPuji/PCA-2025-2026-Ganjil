@@ -1,0 +1,10 @@
+#!/bin/sh
+'''exec' "/media/muhammadnurulpuji/DATA/01_BINUS_2019_2020/02_Kuliah/03_Ganjil 2020 2021/3_Physical Computing & Algorithm/Latihan Week_08/venv/bin/python" "$0" "$@"
+' '''
+# -*- coding: utf-8 -*-
+import re
+import sys
+from numpy.f2py.f2py2e import main
+if __name__ == '__main__':
+    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
+    sys.exit(main())

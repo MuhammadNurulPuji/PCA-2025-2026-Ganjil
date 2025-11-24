@@ -1,0 +1,25 @@
+<circuit version="1.1.0-SR0" rev="2278" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="Uno-22" mainComp="false" Show_id="true" Show_Val="false" Pos="-76,-480" rotation="0" hflip="1" vflip="1" label="Uno-22" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="false">
+<mainCompProps MainCompId="mega328-109" Frequency="16 MHz" Program="AnalogInput/AnalogInput.ino.standard.hex" Auto_Load="false" saveEepr="true" SerialMon="-1" />
+</item>
+
+<item itemtype="WaveGen" CircId="WaveGen-23" mainComp="false" Show_id="false" Show_Val="false" Pos="284,-448" rotation="0" hflip="-1" vflip="1" label="WaveGen-23" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Wave_Type="Sine" Freq="1 mHz" Phase="0 _º" Steps="100 _Steps" Duty="50 _%" Always_On="false" Bipolar="false" Floating="false" Semi_Ampli="2.5 V" Mid_Volt="0 V" />
+
+<item itemtype="Led" CircId="Led-24" mainComp="false" Show_id="false" Show_Val="false" Pos="-156,-352" rotation="0" hflip="-1" vflip="1" label="Led-24" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="30 mA" Resistance="0.6 Ω" />
+
+<item itemtype="Ground" CircId="Ground-25" mainComp="false" Show_id="false" Show_Val="false" Pos="-188,-292" rotation="0" hflip="1" vflip="1" label="Ground-25" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="SerialPort" CircId="SerialPort-26" mainComp="false" Show_id="false" Show_Val="false" Pos="-200,-480" rotation="0" hflip="-1" vflip="1" label="SerialPort-26" idLabPos="-20,-32" labelrot="0" valLabPos="-16,20" valLabRot="0" Auto="false" Port="/dev/pts/5" Baudrate="9600 _Bd" DataBits="8 _bits" StopBits="1 _bits" SerialMon="false" />
+
+<item itemtype="Connector" uid="Connector-20" startpinid="Uno-22-A0" endpinid="WaveGen-23-outnod" pointList="76,-424,172,-424,172,-448,268,-448" />
+
+<item itemtype="Connector" uid="Connector-21" startpinid="Led-24-lPin" endpinid="Uno-22-13" pointList="-140,-352,-68,-352" />
+
+<item itemtype="Connector" uid="Connector-22" startpinid="Ground-25-Gnd" endpinid="Led-24-rPin" pointList="-188,-308,-188,-352,-172,-352" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="SerialPort-26-pin0" endpinid="Uno-22-0" pointList="-160,-488,-100,-488,-100,-464,-68,-464" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="SerialPort-26-pin1" endpinid="Uno-22-1" pointList="-160,-472,-160,-456,-68,-456" />
+
+</circuit>
